@@ -5,7 +5,7 @@ package com.project.weatherapp.dataclasses
  */
 
 
-data class ForecastResult(val city: City, val list: List<Forecast>)
+data class ForecastResult(val city: City, val list: List<Forecast>, var isUpdated: Boolean = false)
 data class City(val id: Long, val name: String, val coord: Coordinates, val country: String, val population: Int)
 data class Coordinates(val lon: Float, val lat: Float)
 data class Forecast(val dt: Long, val temp: Temperature, val pressure: Float, val humidity: Int,

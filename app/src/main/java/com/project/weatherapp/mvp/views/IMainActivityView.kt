@@ -1,5 +1,7 @@
 package com.project.weatherapp.mvp.views
 
+import com.project.weatherapp.dataclasses.ForecastResult
+
 /**
  * Created by anandmishra on 18/12/17.
  */
@@ -9,5 +11,5 @@ interface IMainActivityView {
 
     fun hideLoading()
 
-    fun handleData(newsFeed: Any)
+    fun handleData(weatherData: ForecastResult)
 }
